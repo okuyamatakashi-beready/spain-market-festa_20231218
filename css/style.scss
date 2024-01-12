@@ -36,7 +36,10 @@ a:hover,a:active{
     overflow-x: hidden;
 }
 .sec-1{
-    background: #F9C800;
+    background-image: url(/images/main_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 8;
     /*.head-wrap{
@@ -354,7 +357,26 @@ a:hover,a:active{
         bottom: 46px;
         z-index: 2;
     }
+    .m-img__video {
+        height: 500px;
+
+    }
 }
+
+.head-wrap__eventImg {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        li {
+            width: 32.222%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media print, screen and (min-width: 901px) {
 
     .centerwrap {
@@ -859,7 +881,8 @@ a:hover,a:active{
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+    justify-content: center;
+    padding-bottom: 65px;
     .left-list{
         width: 76.6%;
         ul{
