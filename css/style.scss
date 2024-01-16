@@ -478,7 +478,7 @@ a.application__btn {
     background-color: #F9CA11;
     border-radius: 60px;
     color: #C41E1F;
-    font-size: 53px;
+    font-size: 50px;
     padding: 30px;
     text-align: center;
     display: block;
@@ -486,10 +486,16 @@ a.application__btn {
     margin: 44px auto 59px auto;
     line-height: 1;
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.16);
+    &:first-of-type {
+        margin: 44px auto 30px auto;
+        @media screen and (max-width: 768px) {
+            margin: 13px auto 15px auto;
+        }
+    }
     @media screen and (max-width: 768px) {
         width: 290px;
         font-size: 23px;
-        padding: 20px;
+        padding: 20px 0;
         margin: 13px auto 23px auto;
     }
 }
@@ -546,6 +552,9 @@ a.application__btn {
         a.application__btn {
             line-height: 1.5em;
             margin: 13px auto 30px auto;
+            &:first-of-type {
+                margin: 20px auto 15px auto;
+            }
         }
     }
     .flamenco_wrap {
