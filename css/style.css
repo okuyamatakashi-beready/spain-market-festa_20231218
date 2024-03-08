@@ -283,7 +283,7 @@ a:hover, a:active {
   }
 }
 .sec-5 .bottom-box .bottom-flex .text-box {
-  width: 60%;
+  width: 80%;
 }
 .sec-5 .bottom-box .bottom-flex .text-box .text1 {
   line-height: 1.61;
@@ -296,8 +296,19 @@ a:hover, a:active {
   color: #fff;
   line-height: 1;
 }
+.sec-5 .bottom-box .bottom-flex .text-box br.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sec-5 .bottom-box .bottom-flex .text-box br.sp {
+    display: block;
+  }
+  .sec-5 .bottom-box .bottom-flex .text-box .text2 {
+    line-height: 2em;
+  }
+}
 .sec-5 .bottom-box .bottom-flex .sns-box {
-  width: 30.5%;
+  width: 20%;
   position: relative;
   padding-top: 16px;
 }
@@ -1128,6 +1139,13 @@ br.sp {
     font-size: 14px;
     line-height: 1;
   }
+}
+@media only screen and (max-width: 900px) and (max-width: 768px) {
+  .sec-5 .bottom-box .bottom-flex .text-box .text2 {
+    line-height: 1.5em;
+  }
+}
+@media only screen and (max-width: 900px) {
   .sec-5 .bottom-box .bottom-flex .text-box .copy {
     font-size: 2.3vw;
     line-height: 1;
